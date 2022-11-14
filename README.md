@@ -11,8 +11,6 @@ Day 3 - Data analysis & visualisation
 Day 4 - Dashboard & presentation preparation 
 Day 5-  Final touches, presenting the project 
 
-Documentation - throughout the project 
-
 Daily schedule: 
 09:00 - 09:30 - morning update meeting
 09:30 - 12:30 - working session 1 
@@ -21,3 +19,6 @@ Daily schedule:
 15:30 - 15:45 - afternoon update meeting 
 15:45 - 16:00 - coffee break
 16:00 - 18:00 - working session 3  
+
+Documentation: throughout the project 
+Tools: Trello, Slack 
