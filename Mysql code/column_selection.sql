@@ -13,6 +13,8 @@ select mql_id,business_segment,business_type,seller_id,declared_monthly_revenue 
 select customer_id , customer_city, customer_state, customer_zip_code_prefix from customers;
 
 select * from geolocation;
+select geolocation_state, avg(geolocation_lat), avg(geolocation_lng) from geolocation
+group by geolocation_state;
 
 select mql_id, origin from marketing_qualified_leads;
 
@@ -31,3 +33,5 @@ select product_id, cat, price from prod_cat_price;
 
 select * from sellers;
 
+
+select * from orders;
