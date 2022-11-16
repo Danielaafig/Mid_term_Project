@@ -25,14 +25,15 @@ select customer_id, avg( order_estimated_delivery_date )
 	order_estimated_delivery_date, 
     datediff(order_estimated_delivery_date, order_delivered_customer_date)as dif_del_est 
     from orders
-    where order_delivered_customer_date is not null;
+    where order_delivered_customer_date is not null
+    order by dif_del_est desc;
     
     
 select order_id,customer_id,
     order_delivered_customer_date,
 	order_estimated_delivery_date, 
-    datediff(order_delivered_customer_date,order_purchase_timestamp ) as delivery_day,
-	datediff(order_estimated_delivery_date,order_purchase_timestamp ) as estimated_day,
+    datediff(order_delivered_customer_date,order_purchase_timestamp ) as delivery_days,
+	datediff(order_estimated_delivery_date,order_purchase_timestamp ) as estimated_days,
     datediff(order_estimated_delivery_date, order_delivered_customer_date)as dif_del_est
     from orders
     where order_delivered_customer_date is not null;
