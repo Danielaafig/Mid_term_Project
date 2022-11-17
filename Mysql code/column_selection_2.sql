@@ -37,3 +37,30 @@ select order_id,customer_id,
     datediff(order_estimated_delivery_date, order_delivered_customer_date)as dif_del_est
     from orders
     where order_delivered_customer_date is not null;
+    
+    
+    
+    
+    select customer_id, count(order_id) from orders
+    group by customer_id
+    order by count(order_id) desc;
+    
+    
+    select * from order_reviews;
+    select * from orders;
+    
+    
+    select sum(total_price) from order_status_year_price;
+    select sum(payment_value) from order_payments;
+   select * from order_payment;
+   
+    select * from order_payments;
+    
+    select sum(total_price) from order_status_year_price
+    where order_status not like "canceled";
+    
+    select * from order_payments 
+    join order_status_year_price on order_id=order_id; 
+    
+    
+    
